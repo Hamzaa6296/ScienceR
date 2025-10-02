@@ -12,25 +12,25 @@ const NavBar = () => {
   return (
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
         <div className="container px-4 mx-auto relative text-sm">
-            <div className="flex justify-between items center">
+            <div className="flex justify-between px-5 items center">
                 <div className="flex items-center flex-shrink-0">
-                    <img className="h-10 w-10 mr-2" src={logo} alt="" />
-                    <span className="text-xl tracking-tight">ScienceR</span>
+                    <img className="md:h-10 md:w-10 w-5 h-5 object-contain mr-2" src={logo} alt="" />
+                    <span className="md:text-xl text-sm tracking-tight">ScienceR</span>
                 </div>
-                <ul className="hidden lg:flex ml-14 space-x-12">
+                <ul className="hidden md:flex items-center ml-10  space-x-8">
                     {navItems.map((item, index) => (
                         <li key={index}>
                             <a href={item.href}>{item.label}</a>
                         </li>
                     ))}
                 </ul>
-                <div className="hidden lg:flex justify-center space-x-12 items-center">
+                <div className="hidden lg:flex justify-center space-x-3 items-center">
                     <a href="#" className="py-2 px-3 border rounded-md">Sign In</a>
                     <a href="#" className="py-2 px-3 border rounded-md bg-gradient-to-r from-orange-500 to-orange-800">Create an account</a>
                 </div>
                 <div className="lg:hidden md-flex flex-col justify-end">
-                    <button onClick={toggleNavbar}>
-                        {drawerOpen ? <X/> : <Menu/>}
+                    <button onClick={toggleNavbar} className="mt-3">
+                        {drawerOpen ? <X size={10} /> : <Menu size={18}/>}
                     </button>
                 </div>
             </div>

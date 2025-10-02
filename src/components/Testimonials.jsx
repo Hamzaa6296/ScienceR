@@ -3,8 +3,8 @@ import { testimonials } from "../constants"
 
 function Testimonials() {
   return (
-    <div className="mt-20 container mx-auto">
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-10 lg:my-20">
+    <div className="mt-20 px-5 container mx-auto">
+        <h2 className="text-2xl md:text-6xl text-center my-10 lg:my-20">
             What prople are saying
         </h2>
         <div className="flex flex-wrap justify-center">
