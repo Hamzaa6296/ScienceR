@@ -5,6 +5,7 @@ import FeatureSection from './components/FeatureSection'
 import WorkFlow from './components/WorkFlow'
 import Pricing from './components/Price'
 import Testimonials from './components/Testimonials'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,7 +19,9 @@ function App() {
       <WorkFlow/>
       <Pricing/>
       <Testimonials/>
+      <Footer/>
     </>
+
   )
 }
 

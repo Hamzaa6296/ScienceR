@@ -4,7 +4,7 @@ import { pricingOptions } from "../constants";
 
 function Pricing() {
     return (
-        <div className="mt-20 container px-10 md:max-w-4xl lg:w-full">
+        <div className="mt-20 container px-10 md:max-w-8xl lg:w-full items-center lg:ml-10">
             <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wider">
                 Pricing
             </h2>
